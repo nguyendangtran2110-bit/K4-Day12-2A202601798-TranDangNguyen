@@ -54,4 +54,5 @@ class Settings(BaseSettings):
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
     """Đọc cấu hình một lần rồi cache lại (đọc env mỗi request là lãng phí)."""
+    
     return Settings()
